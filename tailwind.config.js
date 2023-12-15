@@ -13,6 +13,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'home-background': "url('/images/home-background.webp')"
       },
+      colors: {
+        'red': "#C63D56"
+      }
     },
   },
   plugins: [],
