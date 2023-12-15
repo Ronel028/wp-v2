@@ -14,7 +14,8 @@ module.exports = {
         'home-background': "url('/images/home-background.webp')"
       },
       colors: {
-        'red': "#C63D56"
+        'red': "#C63D56",
+        'red-500/50' : "rgb(198, 61,86, 0.5)"
       }
     },
   },

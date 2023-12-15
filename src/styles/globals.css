@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --animate-delay: 0.3s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,20 +35,20 @@ body {
 	border: 2px solid #ffffff;
 	border-radius: 60px;
 	position: relative;
-	&::before {
-		content: '';
-		width: 5px;
-		height: 5px;
-		position: absolute;
-		top: 10px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: #ffffff;
-		border-radius: 50%;
-		opacity: 1;
-		animation: wheel 2s infinite;
-		-webkit-animation: wheel 2s infinite;
-	}
+}
+.mouse::before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ffffff;
+	border-radius: 50%;
+	opacity: 1;
+	animation: wheel 1s infinite;
+	-webkit-animation: wheel 1s infinite;
 }
 
 @keyframes wheel {
@@ -54,4 +56,8 @@ body {
 		opacity: 0;
 		top: 60px;
 	}
+}
+
+.btn-shadow{
+	box-shadow: rgb(99 102 241 / 0.5);
 }
