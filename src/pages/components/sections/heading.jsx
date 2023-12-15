@@ -52,7 +52,7 @@ const Headings = () =>{
                     A <span className={`text-red ${SourceSansProBold.className}`}>Frontend Developer</span>, focused on building Frontend of
                     <span className={`text-red ${SourceSansProBold.className}`}> Website</span>.
                     </h1>
-                    <Link href='/' className={`animate__animated animate__fadeInDownBig animate__delay-2s tracking-wider mb-6 py-2 px-4 inline-flex items-center gap-2 bg-green-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-green-500/50 focus:outline-none ${SourceSansProBold.className}`}>
+                    <Link href='/' className={`animate__animated animate__fadeInDownBig animate__delay-2s tracking-wider mb-6 py-2 px-4 inline-flex items-center gap-2 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/50 focus:outline-none ${SourceSansProBold.className}`}>
                         <i class="fa-solid fa-folder-open text-sm"></i> Projects
                     </Link>
                     <div className=" flex items-center gap-6 animate__animated animate__fadeInDownBig">
