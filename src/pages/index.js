@@ -7,6 +7,8 @@ import Headings from "./components/sections/heading";
 import About from "./components/sections/about";
 import Projects from "./components/sections/projects";
 import Skills from "./components/sections/Skills";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const SourceSansProRegular = localFont({
@@ -29,6 +31,8 @@ export default function Home() {
           <About />
           <Projects />
           <Skills />
+          <Contact />
+          <Footer />
         </div>
       </main>
   );
