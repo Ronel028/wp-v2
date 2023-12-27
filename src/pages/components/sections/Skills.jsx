@@ -55,11 +55,11 @@ const Skills = () => {
                 loading="lazy"
                 alt="Google code"
               />
-              <h5 className=" font-bold tracking-wide">
+              <h5 className="font-medium tracking-wide">
                 Frontend | Framework | Library
               </h5>
             </div>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-4 gap-4">
               <SkillsCard src={html} alt="Html" title="Html" />
               <SkillsCard src={css} alt="Css" title="Css" />
               <SkillsCard
@@ -87,7 +87,7 @@ const Skills = () => {
                 loading="lazy"
                 alt="Code Fork"
               />
-              <h5 className=" font-bold tracking-wide">
+              <h5 className=" font-medium tracking-wide">
                 Backend | Framework | Database
               </h5>
             </div>
@@ -112,7 +112,7 @@ const Skills = () => {
                 loading="lazy"
                 alt="Open Parcel"
               />
-              <h5 className=" font-bold tracking-wide">Others</h5>
+              <h5 className=" font-medium tracking-wide">Others</h5>
             </div>
             <div className="grid grid-cols-4 gap-6">
               <SkillsCard src={git} alt="Git" title="Git" />

@@ -14,7 +14,7 @@ const Footer = () => {
     <>
       <footer className="my-6">
         <div className=" flex items-center justify-between mb-2">
-          <h2 className={`${SourceSansProBold.className} text-[1.1875rem]`}>
+          <h2 className={` font-bold text-[1.1875rem]`}>
             @rnl_dev<span className="text-[#C63D56]">.</span>
           </h2>
           <SocialLink animate="" />

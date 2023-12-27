@@ -31,7 +31,7 @@ const Contact = () => {
             <h5
               data-aos="fade-up"
               data-aos-delay="100"
-              className={`${SourceSansProBold.className} text-xl mb-7 tracking-wide`}
+              className={` text-xl mb-7 font-medium tracking-wide`}
             >
               GET IN TOUCH<span className=" text-red">!</span>
             </h5>
@@ -82,15 +82,10 @@ const Contact = () => {
             data-aos-delay="300"
             className=" border border-red rounded-md py-5 px-4"
           >
-            <h5 className={`${SourceSansProBold.className} text-lg mb-5`}>
-              SEND MESSAGE
-            </h5>
+            <h5 className={` font-medium text-lg mb-5`}>SEND MESSAGE</h5>
             <form action="">
               <div className=" flex flex-col mb-6">
-                <label
-                  htmlFor="name"
-                  className={`${SourceSansProBold.className} tracking-wide text-sm mb-1`}
-                >
+                <label htmlFor="name" className={` tracking-wide text-sm mb-1`}>
                   Name
                 </label>
                 <input
@@ -102,7 +97,7 @@ const Contact = () => {
               <div className=" flex flex-col mb-6">
                 <label
                   htmlFor="email"
-                  className={`${SourceSansProBold.className} tracking-wide text-sm mb-1`}
+                  className={` tracking-wide text-sm mb-1`}
                 >
                   Email
                 </label>
@@ -115,7 +110,7 @@ const Contact = () => {
               <div className=" flex flex-col mb-6">
                 <label
                   htmlFor="message"
-                  className={`${SourceSansProBold.className} tracking-wide text-sm mb-1`}
+                  className={` tracking-wide text-sm mb-1`}
                 >
                   Message
                 </label>
@@ -129,7 +124,7 @@ const Contact = () => {
               </div>
               <div className=" flex items-center justify-end">
                 <button
-                  className={`${SourceSansProBold.className} hover:bg-red transition-all text-sm tracking-wide py-2 px-3 border border-red rounded-lg inline-flex items-center gap-2`}
+                  className={` font-medium hover:bg-red transition-all text-sm tracking-wide py-2 px-3 border border-red rounded-lg inline-flex items-center gap-2`}
                 >
                   <Image
                     src={emailSendIcon}

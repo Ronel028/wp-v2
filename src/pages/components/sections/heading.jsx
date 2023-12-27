@@ -19,7 +19,7 @@ const Headings = () => {
       <div className=" max-w-[1206px] w-[90%] mx-auto ">
         {/* start navigation */}
         <nav className="py-5 flex items-center justify-between animate__animated animate__fadeIn animate__delay-2s">
-          <h2 className={`${SourceSansProBold.className} text-[1.1875rem]`}>
+          <h2 className={` font-bold text-[1.1875rem]`}>
             @rnl_dev<span className="text-[#C63D56]">.</span>
           </h2>
           <ul className="flex items-center gap-8 text-base">
@@ -43,24 +43,17 @@ const Headings = () => {
         <section className=" mt-[154px]">
           <div className=" max-w-[681px] ml-[108px]">
             <p
-              className={`animate__animated animate__fadeInDownBig animate__delay-4s tracking-wide mb-6 inline-flex items-center gap-1 bg-[#C63D56] py-[11px] px-[16px] rounded-lg ${SourceSansProBold.className}`}
+              className={`animate__animated animate__fadeInDownBig animate__delay-4s tracking-wider mb-6 inline-flex items-center gap-1 bg-[#C63D56] py-[11px] px-[16px] rounded-lg`}
             >
-              <Image src={handIcon} width={20} height={20} alt="Hand Icon" />
+              <Image src={handIcon} width={19} height={19} alt="Hand Icon" />
               Hi There! I'm Ronel Florida
             </p>
             <h1
               className={`animate__animated animate__fadeInDownBig animate__delay-3s text-[2.5rem] tracking-wider mb-6 leading-[3rem]`}
             >
-              A{" "}
-              <span className={`text-red ${SourceSansProBold.className}`}>
-                Frontend Developer
-              </span>
+              A <span className={`text-red font-bold`}>Frontend Developer</span>
               , focused on building Frontend of
-              <span className={`text-red ${SourceSansProBold.className}`}>
-                {" "}
-                Website
-              </span>
-              .
+              <span className={`text-red font-bold`}> Website</span>.
             </h1>
             <Link
               href="/"

@@ -21,7 +21,7 @@ const About = () => {
           <div>
             <h3
               data-aos="fade-up"
-              className={`${SourceSansProBold.className} text-xl tracking-wide mb-5`}
+              className={` font-medium text-xl tracking-wide mb-5`}
             >
               GET TO KNOW ME<span className=" text-red">!</span>
             </h3>
@@ -57,7 +57,7 @@ const About = () => {
               href="/"
               data-aos="fade-up"
               data-aos-delay="400"
-              className={`${SourceSansProBold.className} tracking-wide inline-flex items-center gap-2 py-2 px-4 bg-red text-white text-sm font-semibold rounded-md shadow-lg shadow-red-500/50 focus:outline-none`}
+              className={` tracking-wide inline-flex items-center gap-2 py-2 px-4 bg-red text-white text-sm font-semibold rounded-md shadow-lg shadow-red-500/50 focus:outline-none`}
             >
               <i class="fa-solid fa-headset text-sm"></i> Contact Me
             </Link>

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
+import { Inter, PT_Sans, Space_Mono, Barlow, Roboto_Condensed } from "next/font/google";
 import Headings from "./components/sections/heading";
 import About from "./components/sections/about";
 import Projects from "./components/sections/projects";
@@ -10,7 +10,10 @@ import Skills from "./components/sections/Skills";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Barlow({ 
+  weight: ['400', '500', '700'],
+  subsets: ['latin'], 
+});
 const SourceSansProRegular = localFont({
   src: "./fonts/SourceSansPro-Regular.ttf",
 });
@@ -25,7 +28,7 @@ export default function Home() {
   }, [])
 
   return (
-      <main className={`${SourceSansProRegular.className} bg-[#191919]`}>
+      <main className={`${poppins.className} bg-[#191919]`}>
         <Headings />
         <div className="max-w-[1206px] w-[90%] mx-auto overflow-hidden">
           <About />
