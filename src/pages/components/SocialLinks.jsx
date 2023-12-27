@@ -8,21 +8,21 @@ const SocialLink = (props) => {
         target="_blank"
         className=" hover:text-red"
       >
-        <i class="fa-brands fa-square-facebook text-xl"></i>
+        <i className="fa-brands fa-square-facebook text-xl"></i>
       </Link>
       <Link
         href="https://www.linkedin.com/in/ronelflorida/"
         target="_blank"
         className=" hover:text-red"
       >
-        <i class="fa-brands fa-linkedin text-xl"></i>
+        <i className="fa-brands fa-linkedin text-xl"></i>
       </Link>
       <Link
         href="https://github.com/Ronel028"
         target="_blank"
         className=" hover:text-red"
       >
-        <i class="fa-brands fa-square-github text-xl"></i>
+        <i className="fa-brands fa-square-github text-xl"></i>
       </Link>
     </div>
   );

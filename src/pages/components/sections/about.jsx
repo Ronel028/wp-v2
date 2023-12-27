@@ -59,7 +59,7 @@ const About = () => {
               data-aos-delay="400"
               className={`tracking-wide inline-flex items-center gap-2 py-2 px-4 bg-red text-white text-sm font-semibold rounded-md shadow-lg shadow-red-500/30 hover:shadow-red-500/50 focus:outline-none`}
             >
-              <i class="fa-solid fa-headset text-sm"></i> Contact Me
+              <i className="fa-solid fa-headset text-sm"></i> Contact Me
             </Link>
           </div>
           <div

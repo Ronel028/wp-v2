@@ -57,14 +57,14 @@ const Projects = () => {
                   href="https://ideahive.vercel.app/"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/ideaHive-blog"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   Source Code
                 </Link>
               </div>
@@ -96,14 +96,14 @@ const Projects = () => {
                   href="https://fem-calculator-app-seven.vercel.app/"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/FEM-Calculator-App"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   Source Code
                 </Link>
               </div>
@@ -138,14 +138,14 @@ const Projects = () => {
                   href="https://fem-ipaddress-tracker.vercel.app/"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/fem-ipaddress-tracker"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   Source Code
                 </Link>
               </div>
@@ -180,14 +180,14 @@ const Projects = () => {
                   href="https://url-shortening-api-psi.vercel.app/"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/URL-shortening-api"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   Source Code
                 </Link>
               </div>
@@ -220,14 +220,14 @@ const Projects = () => {
                   href="https://fem-huddle-landing-page-lemon.vercel.app/"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/fem-huddle-landing-page"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   Source Code
                 </Link>
               </div>
@@ -260,14 +260,14 @@ const Projects = () => {
                   href="https://fem-tip-calculator-henna.vercel.app/"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-solid fa-link"></i>
+                  <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/fem-tip-calculator"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                   Source Code
                 </Link>
               </div>
@@ -284,7 +284,6 @@ const Projects = () => {
               width={20}
               height={20}
               quality={100}
-              placeholder="blur"
               loading="lazy"
               alt="fire"
               className=""

@@ -51,7 +51,6 @@ const Skills = () => {
                 width={25}
                 height={25}
                 quality={100}
-                placeholder="blur"
                 loading="lazy"
                 alt="Google code"
               />
@@ -83,7 +82,6 @@ const Skills = () => {
                 width={25}
                 height={25}
                 quality={100}
-                placeholder="blur"
                 loading="lazy"
                 alt="Code Fork"
               />
@@ -108,7 +106,6 @@ const Skills = () => {
                 width={25}
                 height={25}
                 quality={100}
-                placeholder="blur"
                 loading="lazy"
                 alt="Open Parcel"
               />

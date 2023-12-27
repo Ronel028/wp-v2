@@ -59,7 +59,7 @@ const Headings = () => {
               href="/"
               className={`animate__animated animate__fadeInDownBig animate__delay-2s tracking-wider mb-6 py-2 px-4 inline-flex items-center gap-2 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 focus:outline-none ${SourceSansProBold.className}`}
             >
-              <i class="fa-solid fa-folder-open text-sm"></i> Projects
+              <i className="fa-solid fa-folder-open text-sm"></i> Projects
             </Link>
             <SocialLink animate="animate__animated animate__fadeInDownBig" />
           </div>

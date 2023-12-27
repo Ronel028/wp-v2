@@ -14,7 +14,6 @@ const SkillsCard = (props) => {
           width={44}
           height={44}
           quality={100}
-          placeholder="blur"
           loading="lazy"
           alt={props.alt}
         />
