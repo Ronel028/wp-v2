@@ -1,8 +1,4 @@
-import Link from "next/link";
-import Image from "next/image";
-import SectionLayout from "@/pages/layout/sectionLayout";
 import localFont from "next/font/local";
-import PagesTitle from "../pages-title";
 import SocialLink from "../SocialLinks";
 
 const SourceSansProBold = localFont({
