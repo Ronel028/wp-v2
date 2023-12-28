@@ -1,4 +1,7 @@
+import { useState } from "react";
+import axios from "axios";
 import Link from "next/link";
+import Swal from "sweetalert2";
 import Image from "next/image";
 import SectionLayout from "@/pages/layout/sectionLayout";
 import localFont from "next/font/local";
@@ -22,6 +25,43 @@ let Subtitle = () => {
 };
 
 const Contact = () => {
+  const [contactInfo, setContactInfo] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const getInputValue = (e) => {
+    setContactInfo({
+      ...contactInfo,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      const sendMessage = await axios.post("/api/contact", contactInfo, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (sendMessage.data.status) {
+        Swal.fire({
+          title: "Email Sent!",
+          text: sendMessage.data.msg,
+          icon: "success",
+        });
+        setContactInfo({
+          ...contactInfo,
+          name: "",
+          email: "",
+          message: "",
+        });
+      }
+    } catch (error) {}
+  };
+
   return (
     <>
       <SectionLayout>
@@ -83,7 +123,7 @@ const Contact = () => {
             className=" border border-red rounded-md py-5 px-4"
           >
             <h5 className={` font-medium text-lg mb-5`}>SEND MESSAGE</h5>
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <div className=" flex flex-col mb-6">
                 <label htmlFor="name" className={` tracking-wide text-sm mb-1`}>
                   Name
@@ -91,6 +131,8 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
+                  value={contactInfo.name}
+                  onChange={getInputValue}
                   className={`tracking-wide py-2 px-3 bg-[#292929] outline-none`}
                 />
               </div>
@@ -104,6 +146,8 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
+                  value={contactInfo.email}
+                  onChange={getInputValue}
                   className={`tracking-wide py-2 px-3 bg-[#292929] outline-none`}
                 />
               </div>
@@ -116,6 +160,8 @@ const Contact = () => {
                 </label>
                 <textarea
                   name="message"
+                  value={contactInfo.message}
+                  onChange={getInputValue}
                   className={`tracking-wide py-2 px-3 bg-[#292929] outline-none`}
                   id=""
                   cols="30"
