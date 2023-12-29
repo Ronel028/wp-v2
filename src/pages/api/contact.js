@@ -9,7 +9,7 @@ export default async function handler(req, res) {
         },
         tls:{
             ciphers: 'SSLv3'
-        }
+        },
     })
 
     let send = await transporter.sendMail({

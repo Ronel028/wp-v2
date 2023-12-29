@@ -30,6 +30,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const getInputValue = (e) => {
     setContactInfo({
@@ -41,6 +42,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
+      setLoading(true);
       const sendMessage = await axios.post("/api/contact", contactInfo, {
         headers: {
           "Content-Type": "application/json",
@@ -58,8 +60,11 @@ const Contact = () => {
           email: "",
           message: "",
         });
+        setLoading(false);
       }
-    } catch (error) {}
+    } catch (error) {
+      setLoading(false);
+    }
   };
 
   return (
@@ -172,14 +177,18 @@ const Contact = () => {
                 <button
                   className={` font-medium hover:bg-red transition-all text-sm tracking-wide py-2 px-3 border border-red rounded-lg inline-flex items-center gap-2`}
                 >
-                  <Image
-                    src={emailSendIcon}
-                    width={20}
-                    height={20}
-                    quality={100}
-                    loading="lazy"
-                    alt="Email send"
-                  />
+                  {loading ? (
+                    <i class="fa-solid fa-arrows-rotate animate-spin"></i>
+                  ) : (
+                    <Image
+                      src={emailSendIcon}
+                      width={20}
+                      height={20}
+                      quality={100}
+                      loading="lazy"
+                      alt="Email send"
+                    />
+                  )}
                   Send Message
                 </button>
               </div>
