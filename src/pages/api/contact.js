@@ -4,8 +4,8 @@ export default async function handler(req, res) {
         port: 587,
         host: 'smtp-mail.outlook.com',
         auth: {
-            user: 'kin-hakari@outlook.com',
-            pass: process.env.password
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
         },
         tls:{
             ciphers: 'SSLv3'

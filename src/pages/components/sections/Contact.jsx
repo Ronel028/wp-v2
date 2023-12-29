@@ -138,6 +138,7 @@ const Contact = () => {
                   name="name"
                   value={contactInfo.name}
                   onChange={getInputValue}
+                  required
                   className={`tracking-wide py-2 px-3 bg-[#292929] outline-none`}
                 />
               </div>
@@ -153,6 +154,7 @@ const Contact = () => {
                   name="email"
                   value={contactInfo.email}
                   onChange={getInputValue}
+                  required
                   className={`tracking-wide py-2 px-3 bg-[#292929] outline-none`}
                 />
               </div>
@@ -167,6 +169,7 @@ const Contact = () => {
                   name="message"
                   value={contactInfo.message}
                   onChange={getInputValue}
+                  required
                   className={`tracking-wide py-2 px-3 bg-[#292929] outline-none`}
                   id=""
                   cols="30"
