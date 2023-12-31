@@ -27,6 +27,7 @@ const Headings = () => {
       } else {
         setBgColor("bg-transparent");
       }
+      console.log(position);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -53,16 +54,52 @@ const Headings = () => {
             </h2>
             <ul className="flex items-center gap-8 text-base">
               <li>
-                <Link href="#about">About</Link>
+                <Link
+                  href="#about"
+                  className={
+                    scrollPosition >= 644 && scrollPosition < 1294
+                      ? "text-red hover:text-red"
+                      : "hover:text-red"
+                  }
+                >
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="#projects">Projects</Link>
+                <Link
+                  href="#projects"
+                  className={
+                    scrollPosition >= 1294 && scrollPosition < 2227
+                      ? "text-red hover:text-red"
+                      : "hover:text-red"
+                  }
+                >
+                  Projects
+                </Link>
               </li>
               <li>
-                <Link href="#skills">Skills</Link>
+                <Link
+                  href="#skills"
+                  className={
+                    scrollPosition >= 2227 && scrollPosition < 2871
+                      ? "text-red hover:text-red"
+                      : "hover:text-red"
+                  }
+                >
+                  Skills
+                </Link>
               </li>
               <li>
-                <Link href="#contact">Contact</Link>
+                <Link
+                  href="#contact"
+                  className={
+                    scrollPosition >= 2871
+                      ? "text-red hover:text-red"
+                      : "hover:text-red"
+                  }
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
