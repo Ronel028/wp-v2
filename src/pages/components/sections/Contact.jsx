@@ -69,7 +69,7 @@ const Contact = () => {
 
   return (
     <>
-      <SectionLayout>
+      <SectionLayout id="contact">
         <PagesTitle title="Contact" />
         <main className=" grid grid-cols-2 gap-4 mb-6">
           <section>

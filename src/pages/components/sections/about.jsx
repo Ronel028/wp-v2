@@ -12,7 +12,7 @@ const SourceSansProBold = localFont({
 const About = () => {
   return (
     <>
-      <SectionLayout>
+      <SectionLayout id="about">
         <PagesTitle
           title="ABOUT ME"
           subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"
@@ -63,9 +63,9 @@ const About = () => {
             </Link>
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-offset="500"
-            data-aos-duration="500"
+            // data-aos="fade-left"
+            // data-aos-offset="500"
+            // data-aos-duration="500"
             className=" flex items-center justify-center"
           >
             <Image

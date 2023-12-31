@@ -37,7 +37,7 @@ let Subtitle = () => {
 const Skills = () => {
   return (
     <>
-      <SectionLayout>
+      <SectionLayout id="skills">
         <PagesTitle title="Skills" subtitle={<Subtitle />} />
         <main className=" grid grid-cols-3 gap-4 mb-6">
           <div

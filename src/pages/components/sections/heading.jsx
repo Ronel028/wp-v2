@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import localFont from "next/font/local";
@@ -12,35 +13,64 @@ const SourceSansProBold = localFont({
 });
 
 const Headings = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [bgColor, setBgColor] = useState("bg-transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      console.log(position);
+      setScrollPosition(position);
+
+      if (position >= 600) {
+        setBgColor("bg-black border-b border-red");
+      } else {
+        setBgColor("bg-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <main
-      className={` min-h-screen relative h-auto bg-home-background bg-cover bg-center `}
+      className={` min-h-screen flex items-center justify-center relative h-auto bg-home-background bg-cover bg-center `}
     >
       <div className=" max-w-[1206px] w-[90%] mx-auto ">
         {/* start navigation */}
-        <nav className="py-5 flex items-center justify-between animate__animated animate__fadeIn animate__delay-2s">
-          <h2 className={` font-bold text-[1.1875rem]`}>
-            @rnl_dev<span className="text-[#C63D56]">.</span>
-          </h2>
-          <ul className="flex items-center gap-8 text-base">
-            <li>
-              <Link href="/">About</Link>
-            </li>
-            <li>
-              <Link href="/">Projects</Link>
-            </li>
-            <li>
-              <Link href="/">Skills</Link>
-            </li>
-            <li>
-              <Link href="/">Contact</Link>
-            </li>
-          </ul>
+        <nav
+          className={`fixed top-0 left-0 right-0 z-20 py-3 transition-colors duration-300 ${bgColor} animate__animated animate__fadeIn animate__delay-2s`}
+        >
+          <div className="flex items-center justify-between max-w-[1206px] w-[90%] mx-auto">
+            <h2 className={` font-bold text-[1.1875rem]`}>
+              <Link href="#">
+                @rnl_dev<span className="text-[#C63D56]">.</span>
+              </Link>
+            </h2>
+            <ul className="flex items-center gap-8 text-base">
+              <li>
+                <Link href="#about">About</Link>
+              </li>
+              <li>
+                <Link href="#projects">Projects</Link>
+              </li>
+              <li>
+                <Link href="#skills">Skills</Link>
+              </li>
+              <li>
+                <Link href="#contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
         </nav>
         {/* start navigation */}
 
         {/* start Heading */}
-        <section className=" mt-[154px]">
+        <section className="">
           <div className=" max-w-[681px] ml-[108px]">
             <p
               className={`animate__animated animate__fadeInDownBig animate__delay-4s tracking-wider mb-6 inline-flex items-center gap-1 bg-[#C63D56] py-[11px] px-[16px] rounded-lg`}
