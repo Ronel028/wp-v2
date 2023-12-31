@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import handIcon from "@/Assets/images/angellist.svg";
 import MouseWheel from "../mouse-wheel";
 import SocialLink from "../SocialLinks";
+import Navigation from "../navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 const SourceSansProBold = localFont({
@@ -43,67 +44,7 @@ const Headings = () => {
     >
       <div className=" max-w-[1206px] w-[90%] mx-auto ">
         {/* start navigation */}
-        <nav
-          className={`fixed top-0 left-0 right-0 z-20 py-3 transition-colors duration-300 ${bgColor} animate__animated animate__fadeIn animate__delay-2s`}
-        >
-          <div className="flex items-center justify-between max-w-[1206px] w-[90%] mx-auto">
-            <h2 className={` font-bold text-[1.1875rem]`}>
-              <Link href="#">
-                @rnl_dev<span className="text-[#C63D56]">.</span>
-              </Link>
-            </h2>
-            <ul className="flex items-center gap-8 text-base">
-              <li>
-                <Link
-                  href="#about"
-                  className={
-                    scrollPosition >= 644 && scrollPosition < 1294
-                      ? "text-red hover:text-red"
-                      : "hover:text-red"
-                  }
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#projects"
-                  className={
-                    scrollPosition >= 1294 && scrollPosition < 2227
-                      ? "text-red hover:text-red"
-                      : "hover:text-red"
-                  }
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#skills"
-                  className={
-                    scrollPosition >= 2227 && scrollPosition < 2871
-                      ? "text-red hover:text-red"
-                      : "hover:text-red"
-                  }
-                >
-                  Skills
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className={
-                    scrollPosition >= 2871
-                      ? "text-red hover:text-red"
-                      : "hover:text-red"
-                  }
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <Navigation scrollPosition={scrollPosition} bgColor={bgColor} />
         {/* start navigation */}
 
         {/* start Heading */}
