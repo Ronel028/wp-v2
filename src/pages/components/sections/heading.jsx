@@ -15,11 +15,11 @@ const SourceSansProBold = localFont({
 const Headings = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [bgColor, setBgColor] = useState("bg-transparent");
+  const [visibleSection, setVisibleSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      console.log(position);
       setScrollPosition(position);
 
       if (position >= 600) {
