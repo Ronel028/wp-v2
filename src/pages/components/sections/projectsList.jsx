@@ -25,11 +25,22 @@ let Subtitle = () => {
   );
 };
 
-const Projects = () => {
+const AllProjects = () => {
   return (
     <>
       <SectionLayout id="projects">
-        <PagesTitle title="My Works" subtitle={<Subtitle />} />
+        <div className="  rounded mb-6 ">
+          <div
+            data-aos="zoom-in"
+            data-aos-anchor-placement="center-bottom"
+            className=" text-center max-w-[676px] mx-auto py-1"
+          >
+            <h2 className={` font-medium  text-[1.75rem] tracking-wide`}>
+              My Works
+            </h2>
+            <div className="text-base tracking-wide">{<Subtitle />}</div>
+          </div>
+        </div>
         <main className=" grid grid-cols-3 gap-4 mb-6">
           <div
             data-aos="zoom-out-right"
@@ -274,26 +285,9 @@ const Projects = () => {
             </div>
           </div>
         </main>
-        <div className=" flex items-center justify-center">
-          <Link
-            href="/projects"
-            className="hover:bg-red transition-all text-sm tracking-wide font-bold py-2 px-3 border border-red rounded-lg inline-flex items-center gap-2"
-          >
-            <Image
-              src={fire}
-              width={20}
-              height={20}
-              quality={100}
-              loading="lazy"
-              alt="fire"
-              className=""
-            />
-            See More
-          </Link>
-        </div>
       </SectionLayout>
     </>
   );
 };
 
-export default Projects;
+export default AllProjects;

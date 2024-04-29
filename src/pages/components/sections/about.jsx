@@ -30,36 +30,41 @@ const About = () => {
               data-aos-delay="100"
               className=" text-base tracking-wide mb-4"
             >
-              Hello, my name is Ronel Florida, and I am an enthusiastic
-              self-taught web developer. I have a strong passion for coding and
-              web development, and have been teaching myself through online
-              resources and creating personal projects.
+              A frontend developer, after graduating with a Bachelor of Science
+              in Information Technology, taught himself frontend development.
+              Currently, I have 9 months of experience, mainly using the TALL
+              Stack (Tailwind, Alpine.js, Laravel, and Livewire). Additionally,
+              I have experience in freelance as frontend developer, mostly
+              develop thesis/capstone projects.
             </p>
             <p
               data-aos="fade-up"
               data-aos-delay="200"
               className=" text-base tracking-wide mb-4"
             >
-              I am a quick learner. I am constantly learning and experimenting
-              with new technologies to expand my skillset. I am looking forward
-              to gain professional experience in the field and im open to any
-              opportunity to work on real-world projects.
+              Ready to embark on the next chapter of my journey, I'm excited to
+              leverage my skills and passion to contribute to meaningful
+              projects that make a difference. Whether it's building intuitive
+              interfaces, optimizing user experiences, or exploring new web
+              development technologies, I'm always eager to take on new
+              challenges and learn something new along the way.
             </p>
             <p
               data-aos="fade-up"
               data-aos-delay="300"
               className=" text-base tracking-wide mb-4"
             >
-              If you want to know more about me, Then don't hesitate to contact
-              me if you have any questions or if you want to work together.
+              Let's connect and create something amazing together!
             </p>
             <Link
-              href="/"
+              href="https://drive.google.com/file/d/1tg_IJMREu80ABH4jrjvEXMZoqLf5aQ0D/view?usp=sharing"
+              target="_blank"
               data-aos="fade-up"
               data-aos-delay="400"
               className={`tracking-wide inline-flex items-center gap-2 py-2 px-4 bg-red text-white text-sm font-semibold rounded-md shadow-lg shadow-red-500/30 hover:shadow-red-500/50 focus:outline-none`}
             >
-              <i className="fa-solid fa-headset text-sm"></i> Contact Me
+              <i className="fa-solid fa-cloud-arrow-down text-sm"></i> Download
+              CV
             </Link>
           </div>
           <div
