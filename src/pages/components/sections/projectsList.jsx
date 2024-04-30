@@ -200,6 +200,7 @@ const AllProjects = () => {
               </h4>
               <p className="font-bold text-white tracking-wide text-xs">
                 React<span className="text-red"> / </span>Sass
+                <span className="text-red"> / </span>Advice Slip API
               </p>
               <div className="flex items-center gap-2">
                 <Link
