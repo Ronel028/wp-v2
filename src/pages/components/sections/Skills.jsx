@@ -19,6 +19,7 @@ import git from "@/Assets/images/icons/git.png";
 import figma from "@/Assets/images/icons/figma.png";
 import codeFork from "@/Assets/images/icons/code-fork.png";
 import openPracel from "@/Assets/images/icons/open-parcel.png";
+import livewire from "@/Assets/images/icons/livewire.png";
 
 const SourceSansProBold = localFont({
   src: "../../fonts/SourceSansPro-Bold.ttf",
@@ -90,8 +91,9 @@ const Skills = () => {
               </h5>
             </div>
             <div className="grid grid-cols-4 gap-6">
-              <SkillsCard src={node} alt="Node" title="Node" />
               <SkillsCard src={laravel} alt="Laravel" title="Laravel" />
+              <SkillsCard src={livewire} alt="Express" title="Livewire" />
+              <SkillsCard src={node} alt="Node" title="Node" />
               <SkillsCard src={express} alt="Express" title="Express" />
             </div>
           </div>

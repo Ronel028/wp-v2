@@ -1,3 +1,4 @@
+import Link from "next/link";
 import localFont from "next/font/local";
 import SocialLink from "../SocialLinks";
 
@@ -11,7 +12,9 @@ const Footer = () => {
       <footer className="my-6">
         <div className=" flex items-center justify-between mb-2">
           <h2 className={` font-bold text-[1.1875rem]`}>
-            @rnl_dev<span className="text-[#C63D56]">.</span>
+            <Link href="#">
+              @rnl_dev<span className="text-[#C63D56]">.</span>
+            </Link>
           </h2>
           <SocialLink animate="" />
         </div>
