@@ -9,7 +9,6 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <title>Ronel Florida | Web Developer</title>
       </Head>
       <body>
         <Main />
