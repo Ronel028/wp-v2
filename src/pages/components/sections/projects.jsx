@@ -276,7 +276,7 @@ const Projects = () => {
         </main>
         <div className=" flex items-center justify-center">
           <Link
-            href="/projects"
+            href="/see-more-projects"
             className="hover:bg-red transition-all text-sm tracking-wide font-bold py-2 px-3 border border-red rounded-lg inline-flex items-center gap-2"
           >
             <Image
@@ -288,7 +288,7 @@ const Projects = () => {
               alt="fire"
               className=""
             />
-            See More
+            See More Projects
           </Link>
         </div>
       </SectionLayout>

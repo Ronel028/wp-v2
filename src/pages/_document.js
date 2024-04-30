@@ -9,6 +9,12 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <meta name="description" content="A frontend developer, after graduating with a Bachelor of Science
+              in Information Technology, taught myself frontend development.
+              Currently, I have 9 months of experience, mainly using the TALL
+              Stack (Tailwind, Alpine.js, Laravel, and Livewire). Additionally,
+              I have experience in freelance as frontend developer, mostly
+              develop thesis/capstone projects." />
       </Head>
       <body>
         <Main />
