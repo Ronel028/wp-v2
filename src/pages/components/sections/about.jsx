@@ -31,7 +31,7 @@ const About = () => {
               className=" text-base tracking-wide mb-4"
             >
               A frontend developer, after graduating with a Bachelor of Science
-              in Information Technology, taught himself frontend development.
+              in Information Technology, taught myself frontend development.
               Currently, I have 9 months of experience, mainly using the TALL
               Stack (Tailwind, Alpine.js, Laravel, and Livewire). Additionally,
               I have experience in freelance as frontend developer, mostly
