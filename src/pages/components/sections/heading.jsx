@@ -28,7 +28,6 @@ const Headings = () => {
       } else {
         setBgColor("bg-transparent");
       }
-      console.log(position);
     };
 
     window.addEventListener("scroll", handleScroll);

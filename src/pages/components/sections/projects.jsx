@@ -4,7 +4,7 @@ import SectionLayout from "@/pages/layout/sectionLayout";
 import localFont from "next/font/local";
 import PagesTitle from "../pages-title";
 import ronelPicture from "@/Assets/images/ronel_picture.jpg";
-import ideaHive from "@/Assets/images/projects/ideaHive.jpg";
+import knowl from "@/Assets/images/projects/knowl.webp";
 import ipAddressTracking from "@/Assets/images/projects/ip-address-tracker.webp";
 import calculator from "@/Assets/images/projects/calculator-app.webp";
 import urlShortening from "@/Assets/images/projects/url-shortining-landing-page.webp";
@@ -36,7 +36,7 @@ const Projects = () => {
             className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
           >
             <Image
-              src={ideaHive}
+              src={knowl}
               sizes="(max-width: 768px) 100%, auto"
               quality={100}
               placeholder="blur"
@@ -45,23 +45,25 @@ const Projects = () => {
               className="rounded-md group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">IdeaHive</h4>
+              <h4 className="font-bold tracking-wide text-xl">Knowl</h4>
               <p className="font-bold text-white tracking-wide text-xs">
-                React<span className="text-red"> / </span>Express
-                <span className="text-red"> / </span>NodeJS
+                Laravel<span className="text-red"> / </span>React
+                <span className="text-red"> / </span>Tailwind
                 <span className="text-red"> / </span>
                 MySQL
               </p>
               <div className="flex items-center gap-2">
                 <Link
-                  href="https://ideahive.vercel.app/"
+                  href="https://knowl.vercel.app/"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-solid fa-link"></i>
                   Visit Website
                 </Link>
                 <Link
-                  href="https://github.com/Ronel028/ideaHive-blog"
+                  href="https://github.com/Ronel028/knowl"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github"></i>
@@ -94,6 +96,7 @@ const Projects = () => {
               <div className="flex items-center gap-2">
                 <Link
                   href="https://fem-calculator-app-seven.vercel.app/"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-solid fa-link"></i>
@@ -101,6 +104,7 @@ const Projects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/FEM-Calculator-App"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github"></i>
@@ -136,6 +140,7 @@ const Projects = () => {
               <div className="flex items-center gap-2">
                 <Link
                   href="https://fem-ipaddress-tracker.vercel.app/"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-solid fa-link"></i>
@@ -143,6 +148,7 @@ const Projects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/fem-ipaddress-tracker"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github"></i>
@@ -178,6 +184,7 @@ const Projects = () => {
               <div className="flex items-center gap-2">
                 <Link
                   href="https://url-shortening-api-psi.vercel.app/"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-solid fa-link"></i>
@@ -185,6 +192,7 @@ const Projects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/URL-shortening-api"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github"></i>
@@ -218,6 +226,7 @@ const Projects = () => {
               <div className="flex items-center gap-2">
                 <Link
                   href="https://fem-huddle-landing-page-lemon.vercel.app/"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-solid fa-link"></i>
@@ -225,6 +234,7 @@ const Projects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/fem-huddle-landing-page"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github"></i>
@@ -258,6 +268,7 @@ const Projects = () => {
               <div className="flex items-center gap-2">
                 <Link
                   href="https://fem-tip-calculator-henna.vercel.app/"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-solid fa-link"></i>
@@ -265,6 +276,7 @@ const Projects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/fem-tip-calculator"
+                  target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
                   <i className="fa-brands fa-github"></i>
