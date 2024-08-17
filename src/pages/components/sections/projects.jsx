@@ -3,9 +3,8 @@ import Image from "next/image";
 import SectionLayout from "@/pages/layout/sectionLayout";
 import localFont from "next/font/local";
 import PagesTitle from "../pages-title";
-import ronelPicture from "@/Assets/images/ronel_picture.jpg";
 import knowl from "@/Assets/images/projects/knowl.webp";
-import ipAddressTracking from "@/Assets/images/projects/ip-address-tracker.webp";
+import drPawsManagementSystem from "@/Assets/images/projects/dr-paws-management-system.webp";
 import calculator from "@/Assets/images/projects/calculator-app.webp";
 import urlShortening from "@/Assets/images/projects/url-shortining-landing-page.webp";
 import huddleLandingPage from "@/Assets/images/projects/huddle-landing-page.webp";
@@ -118,28 +117,27 @@ const Projects = () => {
             className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
           >
             <Image
-              src={ipAddressTracking}
+              src={drPawsManagementSystem}
               sizes="(max-width: 768px) 100%, auto"
               quality={100}
               placeholder="blur"
               loading="lazy"
-              alt="Ip Address Tracker"
+              alt="Dr Paws pet management system"
               className="rounded-md group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
               <h4 className="font-bold tracking-wide text-xl">
-                IP Address Tracker
+                Dr Paws pet management system
               </h4>
               <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Javascript
+                Laravel<span className="text-red"> / </span>Livewire
+                <span className="text-red"> / </span>Tailwind
                 <span className="text-red"> / </span>
-                IP Geolocation API <span className="text-red"> / </span>
-                LeafletJS
+                MySql
               </p>
               <div className="flex items-center gap-2">
                 <Link
-                  href="https://fem-ipaddress-tracker.vercel.app/"
+                  href="https://dr-paws-pet-care-management-system.onrender.com/"
                   target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
@@ -147,7 +145,7 @@ const Projects = () => {
                   Visit Website
                 </Link>
                 <Link
-                  href="https://github.com/Ronel028/fem-ipaddress-tracker"
+                  href="https://github.com/Ronel028/dr-paws-pet-care-management-system"
                   target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >

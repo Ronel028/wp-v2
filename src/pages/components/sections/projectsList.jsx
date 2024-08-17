@@ -17,6 +17,7 @@ import loopStudiosLandingPage from "@/Assets/images/projects/loopstudios-landing
 import spaceTourismWebsite from "@/Assets/images/projects/space-tourism-website.webp";
 import blogrLandingPage from "@/Assets/images/projects/blogr-landing-page.webp";
 import adviceGeneratorApp from "@/Assets/images/projects/advice-generator.jpg";
+import drPawsManagementSystem from "@/Assets/images/projects/dr-paws-management-system.webp";
 
 
 let Subtitle = () => {
@@ -55,9 +56,9 @@ const AllProjects = () => {
         </div>
         <main className=" grid grid-cols-3 gap-4 mb-6">
           <div
-              data-aos="zoom-out-right"
-              className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-            >
+            data-aos="zoom-out-right"
+            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
+          >
             <Image
               src={knowl}
               sizes="(max-width: 768px) 100%, auto"
@@ -127,6 +128,49 @@ const AllProjects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/FEM-Calculator-App"
+                  target="_blank"
+                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
+                >
+                  <i className="fa-brands fa-github"></i>
+                  Source Code
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="zoom-out-left"
+            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
+          >
+            <Image
+              src={drPawsManagementSystem}
+              sizes="(max-width: 768px) 100%, auto"
+              quality={100}
+              placeholder="blur"
+              loading="lazy"
+              alt="Dr Paws pet management system"
+              className="rounded-md group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
+              <h4 className="font-bold tracking-wide text-xl">
+                Dr Paws pet management system
+              </h4>
+              <p className="font-bold text-white tracking-wide text-xs">
+                Laravel<span className="text-red"> / </span>Livewire
+                <span className="text-red"> / </span>Tailwind
+                <span className="text-red"> / </span>
+                MySql
+              </p>
+              <div className="flex items-center gap-2">
+                <Link
+                  href="https://dr-paws-pet-care-management-system.onrender.com/"
+                  target="_blank"
+                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
+                >
+                  <i className="fa-solid fa-link"></i>
+                  Visit Website
+                </Link>
+                <Link
+                  href="https://github.com/Ronel028/dr-paws-pet-care-management-system"
                   target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
