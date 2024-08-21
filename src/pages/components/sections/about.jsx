@@ -57,7 +57,7 @@ const About = () => {
               Let's connect and create something amazing together!
             </p>
             <Link
-              href="https://drive.google.com/file/d/1zIM79M28MSwKOM_8qVRx2XSlwains5Ou/view?usp=sharing"
+              href="https://drive.google.com/file/d/1OFPdQgZVnzPIANpZT3Hc8w-h_cp0z0ey/view?usp=sharing"
               target="_blank"
               data-aos="fade-up"
               data-aos-delay="400"
