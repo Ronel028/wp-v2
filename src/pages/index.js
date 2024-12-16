@@ -1,42 +1,35 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css"
-import localFont from "next/font/local";
-import { Inter, PT_Sans, Space_Mono, Barlow, Roboto_Condensed } from "next/font/google";
-import Headings from "./components/sections/heading";
-import About from "./components/sections/about";
-import Projects from "./components/sections/projects";
+import { Barlow, Source_Code_Pro } from "next/font/google";
+import Heading from "./components/sections/Heading";
+import About from "./components/sections/About";
+import Projects from "./components/sections/Projects";
 import Skills from "./components/sections/Skills";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 
-const poppins = Barlow({ 
+const SourceCodePro = Source_Code_Pro({
   weight: ['400', '500', '700'],
-  subsets: ['latin'], 
-});
-const SourceSansProRegular = localFont({
-  src: "./fonts/SourceSansPro-Regular.ttf",
-});
-const SourceSansProBold = localFont({
-  src: "./fonts/SourceSansPro-Bold.ttf",
+  subsets: ['latin'],
 });
 
 export default function Home() {
 
-  useEffect(() =>{
+  useEffect(() => {
     Aos.init()
   }, [])
 
   return (
-      <main className={`${poppins.className} bg-[#191919]`}>
-        <Headings />
-        <div className="max-w-[1206px] w-[90%] mx-auto overflow-hidden">
-          <About />
-          <Projects />
-          <Skills />
-          <Contact />
-          <Footer />
-        </div>
-      </main>
+    <main className={`${SourceCodePro.className} bg-[#191919]`}>
+      <Heading />
+      <div className="max-w-[1206px] w-[90%] mx-auto overflow-hidden">
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+        <Footer />
+      </div>
+    </main>
   );
 }

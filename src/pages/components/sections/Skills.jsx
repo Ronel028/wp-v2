@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import SectionLayout from "@/pages/layout/sectionLayout";
 import localFont from "next/font/local";
@@ -10,7 +9,6 @@ import css from "@/Assets/images/icons/css.png";
 import javascript from "@/Assets/images/icons/Javascript.png";
 import react from "@/Assets/images/icons/React.png";
 import tailwind from "@/Assets/images/icons/tailwind.png";
-import nextjs from "@/Assets/images/icons/nextjs.png";
 import alpine from "@/Assets/images/icons/alpine.png";
 import node from "@/Assets/images/icons/node.png";
 import laravel from "@/Assets/images/icons/laravel.png";
@@ -20,17 +18,13 @@ import figma from "@/Assets/images/icons/figma.png";
 import codeFork from "@/Assets/images/icons/code-fork.png";
 import openPracel from "@/Assets/images/icons/open-parcel.png";
 import livewire from "@/Assets/images/icons/livewire.png";
+import mysqlLogo from "@/Assets/images/icons/Mysql.png"
 
-const SourceSansProBold = localFont({
-  src: "../../fonts/SourceSansPro-Bold.ttf",
-});
 
 let Subtitle = () => {
   return (
     <p className="text-base tracking-wide">
-      Here you will see my skills, All the tools that I use in development
-      gained through <span className="font-bold text-red">experience</span> at
-      <span className="font-bold text-red"> personal projects and work.</span>
+      A showcase of my skills and the tools I use in development, honed through professional experience in personal projects and work.
     </p>
   );
 };
@@ -94,7 +88,8 @@ const Skills = () => {
               <SkillsCard src={laravel} alt="Laravel" title="Laravel" />
               <SkillsCard src={livewire} alt="Express" title="Livewire" />
               <SkillsCard src={node} alt="Node" title="Node" />
-              <SkillsCard src={express} alt="Express" title="Express" />
+              {/* <SkillsCard src={express} alt="Express" title="Express" /> */}
+              <SkillsCard src={mysqlLogo} alt="Mysql" title="Mysql" />
             </div>
           </div>
           <div

@@ -7,8 +7,8 @@ const SourceSansProBold = localFont({
 
 const SkillsCard = (props) => {
   return (
-    <div className=" flex items-start">
-      <div className="flex flex-col items-center ">
+    <div className="">
+      <div className="flex flex-col items-center">
         <Image
           src={props.src}
           width={44}

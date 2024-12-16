@@ -11,7 +11,7 @@ const Navigation = ({ scrollPosition, bgColor }) => {
             @rnl_dev<span className="text-[#C63D56]">.</span>
           </Link>
         </h2>
-        <ul className="flex items-center gap-8 text-base">
+        <ul className="flex items-center gap-8 text-sm">
           <li>
             <Link
               href="#about"

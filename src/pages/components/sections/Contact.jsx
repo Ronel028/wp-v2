@@ -10,19 +10,6 @@ import emailIcon from "@/Assets/images/icons/email.svg";
 import phoneIcon from "@/Assets/images/icons/phone.svg";
 import emailSendIcon from "@/Assets/images/icons/email-send.svg";
 
-const SourceSansProBold = localFont({
-  src: "../../fonts/SourceSansPro-Bold.ttf",
-});
-
-let Subtitle = () => {
-  return (
-    <p className="text-base tracking-wide">
-      Here you will see my skills, All the tools that I use in development
-      gained through <span className="font-bold text-red">experience</span> at
-      <span className="font-bold text-red"> personal projects and work.</span>
-    </p>
-  );
-};
 
 const Contact = () => {
   const [contactInfo, setContactInfo] = useState({
@@ -76,20 +63,20 @@ const Contact = () => {
             <h5
               data-aos="fade-up"
               data-aos-delay="100"
-              className={` text-xl mb-7 font-medium tracking-wide`}
+              className={` text-xl mb-7 font-bold tracking-wide`}
             >
-              GET IN TOUCH<span className=" text-red">!</span>
+              Get in touch<span className=" text-red">!</span>
             </h5>
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className=" mb-6 tracking-wide"
+              className=" mb-6 tracking-wide leading-6 text-sm"
             >
               I’m open to job opportunity related to web development where I can
               contribute, learn and grow. If you have good opportunity that
               matches my skills then don’t hesitate to contact me.
             </p>
-            <div className=" flex flex-col gap-3">
+            <div className=" flex flex-col gap-6">
               <div
                 data-aos="fade-up"
                 data-aos-delay="300"
@@ -103,7 +90,7 @@ const Contact = () => {
                   loading="lazy"
                   alt="Email"
                 />
-                <p className="tracking-wide">rnl.florida@gmail.com</p>
+                <p className="tracking-wide text-sm">rnl.florida@gmail.com</p>
               </div>
               <div
                 data-aos="fade-up"
@@ -118,7 +105,7 @@ const Contact = () => {
                   loading="lazy"
                   alt="Phone"
                 />
-                <p className="tracking-wide">+6391-2910-2641</p>
+                <p className="tracking-wide text-sm">+6391-2910-2641</p>
               </div>
             </div>
           </section>

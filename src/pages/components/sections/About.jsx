@@ -1,46 +1,41 @@
 import Link from "next/link";
 import Image from "next/image";
 import SectionLayout from "@/pages/layout/sectionLayout";
-import localFont from "next/font/local";
 import PagesTitle from "../pages-title";
 import ronelPicture from "@/Assets/images/ronel_picture.jpg";
 
-const SourceSansProBold = localFont({
-  src: "../../fonts/SourceSansPro-Bold.ttf",
-});
 
 const About = () => {
   return (
     <>
       <SectionLayout id="about">
         <PagesTitle
-          title="ABOUT ME"
-          subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"
+          title="About Me"
+          subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming"
         />
         <main className=" grid grid-cols-2 gap-2">
           <div>
             <h3
               data-aos="fade-up"
-              className={` font-medium text-xl tracking-wide mb-5`}
+              className={` font-bold text-xl tracking-wide mb-5`}
             >
-              GET TO KNOW ME<span className=" text-red">!</span>
+              Get to know me<span className=" text-red">!</span>
             </h3>
             <p
               data-aos="fade-up"
               data-aos-delay="100"
-              className=" text-base tracking-wide mb-4"
+              className=" text-sm tracking-wide leading-6 mb-5"
             >
               A frontend developer, after graduating with a Bachelor of Science
               in Information Technology, taught myself frontend development.
-              Currently, I have 9 months of experience, mainly using the TALL
-              Stack (Tailwind, Alpine.js, Laravel, and Livewire). Additionally,
+              Currently, I have 1 year of experience, mainly using the Laravel framework and Livewire. Additionally,
               I have experience in freelance as frontend developer, mostly
               develop thesis/capstone projects.
             </p>
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className=" text-base tracking-wide mb-4"
+              className=" text-sm tracking-wide leading-6 mb-5"
             >
               Ready to embark on the next chapter of my journey, I'm excited to
               leverage my skills and passion to contribute to meaningful
@@ -52,12 +47,12 @@ const About = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className=" text-base tracking-wide mb-4"
+              className=" text-sm font-bold tracking-wide mb-5"
             >
               Let's connect and create something amazing together!
             </p>
             <Link
-              href="https://drive.google.com/file/d/1req3uEe-eaBpWPPn3F2aN7xXNGO18zr0/view?usp=sharing"
+              href="https://drive.google.com/file/d/1dNgC5xyQVxcQQWEq1HuTpPkReClARIE_/view?usp=sharing"
               target="_blank"
               data-aos="fade-up"
               data-aos-delay="400"
@@ -68,9 +63,6 @@ const About = () => {
             </Link>
           </div>
           <div
-            // data-aos="fade-left"
-            // data-aos-offset="500"
-            // data-aos-duration="500"
             className=" flex items-center justify-center"
           >
             <Image

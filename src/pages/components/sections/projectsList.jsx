@@ -24,7 +24,7 @@ let Subtitle = () => {
   return (
     <p className="text-base tracking-wide">
       Here you will find projects that I develop, mostly personal projects focus
-      on <span className=" text-red font-bold mr-1">Front end Development</span>
+      on <span className=" text-red font-bold mr-1">Front-end Development </span>
       Mostly the source of design for my projects is from
       <Link
         href="https://www.frontendmentor.io/profile/Ronel028"
@@ -128,49 +128,6 @@ const AllProjects = () => {
                 </Link>
                 <Link
                   href="https://github.com/Ronel028/FEM-Calculator-App"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={drPawsManagementSystem}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Dr Paws pet management system"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Dr Paws pet management system
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Laravel<span className="text-red"> / </span>Livewire
-                <span className="text-red"> / </span>Tailwind
-                <span className="text-red"> / </span>
-                MySql
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://dr-paws-pet-care-management-system.onrender.com/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/dr-paws-pet-care-management-system"
                   target="_blank"
                   className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                 >
