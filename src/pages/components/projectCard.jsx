@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 
 const ProjectCard = ({ imageSrc, name, technologies, projectLink, projectSourceCode, dataAos }) => {
     return (
@@ -20,33 +19,35 @@ const ProjectCard = ({ imageSrc, name, technologies, projectLink, projectSourceC
                 <h4 className="font-bold tracking-wide text-xl text-center">{name}</h4>
                 <p className="font-bold text-white tracking-wide text-xs text-center">
                     {
-                        technologies.map((value, index) => {
-                            return (
-                                <span key={index}>
-                                    {value}
-                                    {value === technologies[technologies.length - 1] ? null : <span className=" text-red inline-block px-1">/</span>}
-                                </span>
-                            )
-                        })
+                        Array.isArray(technologies) && technologies.length > 0 ? (
+                            technologies.map((value, index) => {
+                                return (
+                                    <span key={index}>
+                                        {value}
+                                        {value === technologies[technologies.length - 1] ? null : <span className=" text-red inline-block px-1">/</span>}
+                                    </span>
+                                )
+                            })
+                        ) : null
                     }
                 </p>
                 <div className="flex items-center gap-2">
-                    <Link
+                    <a
                         href={projectLink}
                         target="_blank"
                         className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                     >
                         <i className="fa-solid fa-link"></i>
                         Visit Website
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href={projectSourceCode}
                         target="_blank"
                         className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
                     >
                         <i className="fa-brands fa-github"></i>
                         Source Code
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

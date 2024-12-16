@@ -24,7 +24,7 @@ export default function Home() {
   useEffect(() => {
     async function visitors() {
       try {
-        const result = await axios.post('/api/visitors')
+        await axios.post('/api/visitors')
       } catch (error) {
 
       }

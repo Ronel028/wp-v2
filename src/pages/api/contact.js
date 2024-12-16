@@ -7,7 +7,7 @@ export default async function handler(req, res) {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
         },
-        tls:{
+        tls: {
             ciphers: 'SSLv3'
         },
     })
