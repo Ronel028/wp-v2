@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import axios from "axios";
 import Aos from "aos";
 import "aos/dist/aos.css"
-import { Barlow, Source_Code_Pro } from "next/font/google";
+import { Source_Code_Pro } from "next/font/google";
 import Heading from "./components/sections/Heading";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
@@ -18,6 +19,14 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init()
+  }, [])
+
+  useEffect(() => {
+    async function visitors() {
+      const result = await axios.post('/api/visitors')
+      console.log(result)
+    }
+    visitors()
   }, [])
 
   return (
