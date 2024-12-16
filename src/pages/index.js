@@ -21,13 +21,13 @@ export default function Home() {
     Aos.init()
   }, [])
 
-  useEffect(() => {
-    async function visitors() {
-      const result = await axios.post('/api/visitors')
-      console.log(result)
-    }
-    visitors()
-  }, [])
+  // useEffect(() => {
+  //   async function visitors() {
+  //     const result = await axios.post('/api/visitors')
+  //     console.log(result)
+  //   }
+  //   visitors()
+  // }, [])
 
   return (
     <main className={`${SourceCodePro.className} bg-[#191919]`}>

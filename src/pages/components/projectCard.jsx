@@ -4,7 +4,6 @@ import Link from "next/link"
 const ProjectCard = ({ imageSrc, name, technologies, projectLink, projectSourceCode, dataAos }) => {
     return (
         <div
-            // data-aos="zoom-out-right"
             data-aos={dataAos}
             className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
         >

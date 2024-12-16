@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import SectionLayout from "@/pages/layout/sectionLayout";
 import knowl from "@/Assets/images/projects/knowl.webp";
 import ipAddressTracking from "@/Assets/images/projects/ip-address-tracker.webp";
@@ -17,8 +16,7 @@ import loopStudiosLandingPage from "@/Assets/images/projects/loopstudios-landing
 import spaceTourismWebsite from "@/Assets/images/projects/space-tourism-website.webp";
 import blogrLandingPage from "@/Assets/images/projects/blogr-landing-page.webp";
 import adviceGeneratorApp from "@/Assets/images/projects/advice-generator.jpg";
-import drPawsManagementSystem from "@/Assets/images/projects/dr-paws-management-system.webp";
-import ProjectCard from "../projectCard";
+import ProjectCard from "@/pages/components/projectCard";
 
 
 let Subtitle = () => {

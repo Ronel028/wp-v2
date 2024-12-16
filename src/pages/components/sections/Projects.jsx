@@ -10,7 +10,7 @@ import huddleLandingPage from "@/Assets/images/projects/huddle-landing-page.webp
 import tipCalculator from "@/Assets/images/projects/tip-calculator-app.webp";
 import clipboardLandingPage from "@/Assets/images/projects/clipboard-landing-page.webp";
 import fire from "@/Assets/images/Fire.png";
-import ProjectCard from "../projectCard";
+import ProjectCard from "@/pages/components/projectCard";
 
 const SourceSansProBold = localFont({
   src: "../../fonts/SourceSansPro-Bold.ttf",
