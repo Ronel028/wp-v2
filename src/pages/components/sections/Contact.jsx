@@ -168,7 +168,7 @@ const Contact = () => {
                   className={` font-medium hover:bg-red transition-all text-sm tracking-wide py-2 px-3 border border-red rounded-lg inline-flex items-center gap-2`}
                 >
                   {loading ? (
-                    <i class="fa-solid fa-arrows-rotate animate-spin"></i>
+                    <i className="fa-solid fa-arrows-rotate animate-spin"></i>
                   ) : (
                     <Image
                       src={emailSendIcon}

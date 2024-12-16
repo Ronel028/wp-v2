@@ -18,6 +18,7 @@ import spaceTourismWebsite from "@/Assets/images/projects/space-tourism-website.
 import blogrLandingPage from "@/Assets/images/projects/blogr-landing-page.webp";
 import adviceGeneratorApp from "@/Assets/images/projects/advice-generator.jpg";
 import drPawsManagementSystem from "@/Assets/images/projects/dr-paws-management-system.webp";
+import ProjectCard from "../projectCard";
 
 
 let Subtitle = () => {
@@ -55,676 +56,134 @@ const AllProjects = () => {
           </div>
         </div>
         <main className=" grid grid-cols-3 gap-4 mb-6">
-          <div
-            data-aos="zoom-out-right"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={knowl}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="IdeaHive"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">Knowl</h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Laravel<span className="text-red"> / </span>React
-                <span className="text-red"> / </span>Tailwind
-                <span className="text-red"> / </span>
-                MySQL
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://knowl.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/knowl"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-down"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={calculator}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Calculator"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Calculator App
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Javascript
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-calculator-app-seven.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/FEM-Calculator-App"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={adviceGeneratorApp}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Advice generator app"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Advice Generator
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                React<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Advice Slip API
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-advice-generator-g81k.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-advice-generator"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={ipAddressTracking}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Ip Address Tracker"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                IP Address Tracker
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Javascript
-                <span className="text-red"> / </span>
-                IP Geolocation API <span className="text-red"> / </span>
-                LeafletJS
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-ipaddress-tracker.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-ipaddress-tracker"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-right"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={urlShortening}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="url shortening landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                URL Shortening Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Javascript
-                <span className="text-red"> / </span>
-                Shrtcode API
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://url-shortening-api-psi.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/URL-shortening-api"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-up"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={huddleLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Huddle Landing Page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Huddle Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                React<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Framer Motion
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-huddle-landing-page-lemon.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-huddle-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={tipCalculator}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Tip Calculator"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Tip Calculator
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Sass
-                <span className="text-red"> / </span>Javascript
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-tip-calculator-henna.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-tip-calculator"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={githubUserSearch}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Github user search"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Github User Search
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Scss
-                <span className="text-red"> / </span>Javascript
-                <span className="text-red"> / </span>Github Users API
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://github-user-search-psi-teal.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/github-user-search"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={clipboardLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Clipboard landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Clipboard Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Css
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-clipboard-landing-page-steel.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/FEM-clipboard-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={countryList}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Country list"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">Country List</h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Scss
-                <span className="text-red"> / </span>Javascript
-                <span className="text-red"> / </span>Rest Country API
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-country-search.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-country-search"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={sunnySideLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Sunnyside landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                SunnySide Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Scss
-                <span className="text-red"> / </span>Javascript
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-sunnyside-landing-page-pied.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-sunnyside-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={fyloLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Fyloe landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Fylo Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Css
-                <span className="text-red"> / </span>Javascript
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-fylo-landing-page.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-fylo-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={easybankLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Easybank landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Easybank Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Scss
-                <span className="text-red"> / </span>Javascript
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-easybank-landing-page-six.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-easybank-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={loopStudiosLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Loopstudio landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Loop Studios Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Scss
-                <span className="text-red"> / </span>Javascript
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-loopstudios-landing-page-taupe.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-loopstudios-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={spaceTourismWebsite}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="space tourism website"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Space Tourism Multi-Page Website
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                React<span className="text-red"> / </span>Scss
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-space-tourism-landingpage.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-space-tourism"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div
-            data-aos="zoom-out-left"
-            data-aos-delay="100"
-            className="relative group overflow-hidden rounded-md border border-transparent hover:border-red"
-          >
-            <Image
-              src={blogrLandingPage}
-              sizes="(max-width: 768px) 100%, auto"
-              quality={100}
-              placeholder="blur"
-              loading="lazy"
-              alt="Blogr landing page"
-              className="rounded-md group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-90 opacity-0 group-hover:opacity-100 flex flex-col gap-3 items-center justify-center transition-opacity duration-300">
-              <h4 className="font-bold tracking-wide text-xl">
-                Blogr Landing Page
-              </h4>
-              <p className="font-bold text-white tracking-wide text-xs">
-                Html<span className="text-red"> / </span>Scss
-              </p>
-              <div className="flex items-center gap-2">
-                <Link
-                  href="https://fem-blogr-landing-page-nine.vercel.app/"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-solid fa-link"></i>
-                  Visit Website
-                </Link>
-                <Link
-                  href="https://github.com/Ronel028/fem-blogr-landing-page"
-                  target="_blank"
-                  className="hover:bg-red transition-all text-xs tracking-wide font-bold p-2 border border-red rounded-lg flex items-center gap-2"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  Source Code
-                </Link>
-              </div>
-            </div>
-          </div>
+          <ProjectCard
+            dataAos={'zoom-out-right'}
+            imageSrc={knowl}
+            name={'Knowl'}
+            technologies={['Laravel', 'React', 'Tailwind', 'MySql']}
+            projectLink={'https://knowl.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/knowl'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-down'}
+            imageSrc={calculator}
+            name={'Calculator'}
+            technologies={['Html', 'Scss', 'Javascript']}
+            projectLink={'https://fem-calculator-app-seven.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/FEM-Calculator-App'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-down'}
+            imageSrc={adviceGeneratorApp}
+            name={'Advie Generator App'}
+            technologies={['React', 'Scss', 'Advice Slip API']}
+            projectLink={'https://fem-advice-generator-g81k.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-advice-generator'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={ipAddressTracking}
+            name={'Ip Address Tracker'}
+            technologies={['Html', 'Scss', 'Javascript', 'IP Geolocation API', 'LeafletJs']}
+            projectLink={'https://fem-ipaddress-tracker.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-ipaddress-tracker'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-right'}
+            imageSrc={urlShortening}
+            name={'Url Shortening Landing page'}
+            technologies={['Html', 'Scss', 'Javascript', 'Shrtcode API']}
+            projectLink={'https://url-shortening-api-psi.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/URL-shortening-api'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-up'}
+            imageSrc={huddleLandingPage}
+            name={'Huddle Landing Page'}
+            technologies={['React', 'Scss', 'Framer Motion']}
+            projectLink={'https://fem-huddle-landing-page-lemon.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-huddle-landing-page'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={tipCalculator}
+            name={'Tip Calculator'}
+            technologies={['Html', 'Scss', 'Javascript']}
+            projectLink={'https://fem-tip-calculator-henna.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-tip-calculator'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={githubUserSearch}
+            name={'Github user search'}
+            technologies={['Html', 'Scss', 'Javascript', 'Github User API']}
+            projectLink={'https://github-user-search-psi-teal.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/github-user-search'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-down'}
+            imageSrc={clipboardLandingPage}
+            name={'Clipboard Landing Page'}
+            technologies={['Html', 'Css']}
+            projectLink={'https://fem-clipboard-landing-page-steel.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/FEM-clipboard-landing-page'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={countryList}
+            name={'Country List'}
+            technologies={['Html', 'Css', 'Javascript', 'Rest Country API']}
+            projectLink={'https://fem-country-search.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-country-search'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={sunnySideLandingPage}
+            name={'Sunnyside landing page'}
+            technologies={['Html', 'Scss', 'Javascript']}
+            projectLink={'https://fem-sunnyside-landing-page-pied.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-sunnyside-landing-page'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={fyloLandingPage}
+            name={'Fylo Landing Page'}
+            technologies={['Html', 'Scss', 'Javascript']}
+            projectLink={'https://fem-fylo-landing-page.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-fylo-landing-page'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={easybankLandingPage}
+            name={'Easybank Landing Page'}
+            technologies={['Html', 'Scss', 'Javascript']}
+            projectLink={'https://fem-easybank-landing-page-six.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-easybank-landing-page'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={loopStudiosLandingPage}
+            name={'Loopstudio landing page'}
+            technologies={['Html', 'Scss', 'Javascript']}
+            projectLink={'https://fem-loopstudios-landing-page-taupe.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-loopstudios-landing-page'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={spaceTourismWebsite}
+            name={'Space Tourism Multi-Page Website'}
+            technologies={['React', 'Scss']}
+            projectLink={'https://fem-space-tourism-landingpage.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-space-tourism'}
+          />
+          <ProjectCard
+            dataAos={'zoom-out-left'}
+            imageSrc={blogrLandingPage}
+            name={'Blogr Landing Page'}
+            technologies={['Html', 'Scss']}
+            projectLink={'https://fem-blogr-landing-page-nine.vercel.app/'}
+            projectSourceCode={'https://github.com/Ronel028/fem-blogr-landing-page'}
+          />
         </main>
         <div className=" flex items-center justify-end">
           <Link
