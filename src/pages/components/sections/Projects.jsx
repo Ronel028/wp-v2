@@ -33,7 +33,7 @@ const Projects = () => {
           <ProjectCard
             dataAos={'zoom-out-right'}
             imageSrc={knowl}
-            name={'Knowl'}
+            name={'Code hub'}
             technologies={['Laravel', 'React', 'Tailwind', 'MySql']}
             projectLink={'https://knowl.vercel.app/'}
             projectSourceCode={'https://github.com/Ronel028/knowl'}
